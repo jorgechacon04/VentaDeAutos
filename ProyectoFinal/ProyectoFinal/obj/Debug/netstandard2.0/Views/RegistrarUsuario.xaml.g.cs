@@ -13,7 +13,7 @@
 namespace ProyectoFinal {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\RegistrarUsuario.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/RegistrarUsuario.xaml")]
     public partial class RegistrarUsuario : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

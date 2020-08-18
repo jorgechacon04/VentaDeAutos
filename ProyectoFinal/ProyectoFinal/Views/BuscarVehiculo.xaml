@@ -10,25 +10,46 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <SearchBar x:Name="srcBar" 
-                       TextChanged="srcBar_TextChanged">
+            <SearchBar x:Name="srcBar"
+                       SearchCommand="{Binding PerformSearch}"
+                       SearchCommandParameter="{Binding Text, Source={x:Reference srcBar}}">
             </SearchBar>
-            <ListView x:Name="lsView" HasUnevenRows="True"
-                  Margin="5" SeparatorVisibility="None" BackgroundColor="LightGray">
+            <ListView x:Name="lsView"
+                      ItemsSource="{Binding cars.SeachResults}"
+                      HasUnevenRows="True"
+                      Margin="5"
+                      SeparatorVisibility="None"
+                      BackgroundColor="LightGray">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout VerticalOptions="Center" 
-                                     HorizontalOptions="Center"
-                                     Orientation="Horizontal" Margin="0,20,0,20">
-                            <Image Source="{Binding ImageURL}">
-                            </Image>
-                                <Label Text="Modelo: " TextColor="Black"></Label>
-                            <Label Text="{Binding Nombre}" TextColor="Black">
-                            </Label>
-                                <Label Text="Precio: " TextColor="Black"></Label>
-                                <Label Text="{Binding Precio}" TextColor="Black">
-                            </Label>
+                                     HorizontalOptions="CenterAndExpand"
+                                     Orientation="Vertical"
+                                     BackgroundColor="White">
+                            <Image
+                                Source="{Binding photos}"
+                                HeightRequest="250"
+                                WidthRequest="500"/>
+
+                                <StackLayout Orientation="Horizontal">
+                                 
+                                    <Label Text="Marca: "
+                                           TextColor="Black"/>
+                                    <Label Text="{Binding brand}"
+                                           TextColor="#41B3A3"/>
+
+                                    <Label Text="Modelo: "
+                                           TextColor="Black"/>
+                                    <Label Text="{Binding model}"
+                                           TextColor="#41B3A3"/>
+
+                                    <Label Text="Año: "
+                                           TextColor="Black"/>
+                                    <Label Text="{Binding year}"
+                                           TextColor="#41B3A3 "/>
+
+                                </StackLayout>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
