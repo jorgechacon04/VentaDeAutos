@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.BuscarVehiculo2">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" Android="5"></OnPlatform>
+    </ContentPage.Padding>
+
+
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar x:Name="srcBar" 
+                       TextChanged="srcBar_TextChanged">
+            </SearchBar>
+            <ListView x:Name="lsView" HasUnevenRows="True"
+                  Margin="5" SeparatorVisibility="None" BackgroundColor="LightGray">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout VerticalOptions="Center" 
+                                     HorizontalOptions="Center"
+                                     Orientation="Horizontal" Margin="0,20,0,20">
+                            <Image Source="{Binding ImageURL}">
+                            </Image>
+                                <Label Text="Modelo: " TextColor="Black"></Label>
+                            <Label Text="{Binding Nombre}" TextColor="Black">
+                            </Label>
+                                <Label Text="Precio: " TextColor="Black"></Label>
+                                <Label Text="{Binding Precio}" TextColor="Black">
+                            </Label>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

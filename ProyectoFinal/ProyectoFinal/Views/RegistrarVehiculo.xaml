@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.RegistrarVehiculo">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+           
+            <Grid BackgroundColor="#41B3A3" Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="1" Text="Registro de Vehiculo" FontSize="20" TextColor="White" BackgroundColor="Transparent"  VerticalOptions="Center" ></Label>
+                <Button Grid.Row="0" Grid.Column="2" Text="Cancelar" TextColor="Red" 
+                        FontSize="12" BackgroundColor="White" 
+                        VerticalOptions="Center" HorizontalOptions="End"
+                        Margin="0,0,5,0"
+                        Clicked="btnCancelar_Clicked"/>
+            </Grid>
+            <Grid Grid.Row="1" ColumnSpacing="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="Gray" TextColor="White" Text="Detalles del vehiculo" FontSize="20" Margin="10,10,10,10" HorizontalOptions="FillAndExpand" 
+                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+                <StackLayout Grid.Row="1" Grid.Column="0" Margin="10,0,0,0">
+                    <Label Text="Marca"></Label>
+                    <Entry x:Name="txtMarca" FontSize="16"
+                             Text="{Binding car.brand}"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="1" Margin="0,0,10,0">
+                    <Label Text="Placa"></Label>
+                    <Entry x:Name="txtPrecio" FontSize="16"
+                           Text="{Binding car.plate}"  />
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" Grid.Column="0" Margin="10,0,0,0">
+                    <Label Text="Modelo"></Label>
+                    <Entry x:Name="txtModelo" FontSize="16"
+                             Text="{Binding car.model}"/>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="1" Margin="0,0,10,0">
+                    <Label Text="Año"></Label>
+                    <Entry x:Name="txtYear" FontSize="16"
+                             Text="{Binding car.year}"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" Grid.Column="0" Margin="10,0,0,0">
+                    <Label Text="Extras"></Label>
+                    <Entry x:Name="txtExtras" FontSize="16"
+                             Text="{Binding car.extras}"/>
+                </StackLayout>
+                <StackLayout Grid.Row="3" Grid.Column="1" Margin="0,0,10,0">
+                    <Label Text="Transmision"></Label>
+                    <Entry x:Name="txtTransmision" FontSize="16"
+                             Text="{Binding car.transmission}"/>
+                </StackLayout>
+
+
+                <StackLayout Grid.Row="4" Grid.Column="0" Margin="10,0,0,0">
+                    <Label Text="Kilometraje"></Label>
+                    <Entry x:Name="txKm" FontSize="16"
+                             Text="{Binding car.km}"/>
+                </StackLayout>
+                
+                <StackLayout Grid.Row="4" Grid.Column="1" Margin="0,0,10,0">
+                    <Label Text="Color"></Label>
+                    <Entry x:Name="txtColor" FontSize="16"
+                             Text="{Binding car.color}"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="5" Grid.Column="0" Margin="10,0,0,0">
+                    <Label Text="Url de la foto"></Label>
+                    <Entry x:Name="txtImagen" FontSize="16"
+                             Text="{Binding car.photos}"/>
+                </StackLayout>
+                
+                <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="10,0,10,0">
+                    <Button x:Name="btnAceptar" Text="Aceptar registro" 
+                            BackgroundColor="#41B3A3" TextColor="White"
+                            Command="{Binding OperationCommand}"/>
+                </StackLayout>
+
+            </Grid>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
