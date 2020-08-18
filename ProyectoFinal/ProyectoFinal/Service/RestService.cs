@@ -85,5 +85,15 @@ namespace ProyectoFinal
             return JsonConvert.DeserializeObject<List<CarDto>>(response);
 
         }
+
+        public async Task<List<CarListDTO>> GetAllCars()
+        {
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", TokenTransporter.Instance.Token);
+
+            string response = await httpClient.GetAsync(baseUrl + "/car").Result.Content.ReadAsStringAsync();
+
+            return JsonConvert.DeserializeObject<List<CarListDTO>>(response);
+
+        }
     }
 }

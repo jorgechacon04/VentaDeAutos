@@ -1,39 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jorer\\Documents\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.Android\\ProyectoFinal.Android.csproj": {}
+    "/Users/josemoya/Documents/GitHub/VentaDeAutos/ProyectoFinal/ProyectoFinal.Android/ProyectoFinal.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jorer\\Documents\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.Android\\ProyectoFinal.Android.csproj": {
+    "/Users/josemoya/Documents/GitHub/VentaDeAutos/ProyectoFinal/ProyectoFinal.Android/ProyectoFinal.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jorer\\Documents\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.Android\\ProyectoFinal.Android.csproj",
+        "projectUniqueName": "/Users/josemoya/Documents/GitHub/VentaDeAutos/ProyectoFinal/ProyectoFinal.Android/ProyectoFinal.Android.csproj",
         "projectName": "ProyectoFinal.Android",
-        "projectPath": "C:\\Users\\jorer\\Documents\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.Android\\ProyectoFinal.Android.csproj",
-        "packagesPath": "C:\\Users\\jorer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jorer\\Documents\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.Android\\obj\\",
+        "projectPath": "/Users/josemoya/Documents/GitHub/VentaDeAutos/ProyectoFinal/ProyectoFinal.Android/ProyectoFinal.Android.csproj",
+        "packagesPath": "/Users/josemoya/.nuget/packages/",
+        "outputPath": "/Users/josemoya/Documents/GitHub/VentaDeAutos/ProyectoFinal/ProyectoFinal.Android/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\jorer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/josemoya/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "monoandroid90"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\jorer\\Documents\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj": {
-                "projectPath": "C:\\Users\\jorer\\Documents\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj"
+              "/Users/josemoya/Documents/GitHub/VentaDeAutos/ProyectoFinal/ProyectoFinal/ProyectoFinal.csproj": {
+                "projectPath": "/Users/josemoya/Documents/GitHub/VentaDeAutos/ProyectoFinal/ProyectoFinal/ProyectoFinal.csproj"
               }
             }
           }
@@ -54,28 +48,22 @@
         }
       }
     },
-    "C:\\Users\\jorer\\Documents\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj": {
+    "/Users/josemoya/Documents/GitHub/VentaDeAutos/ProyectoFinal/ProyectoFinal/ProyectoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jorer\\Documents\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj",
+        "projectUniqueName": "/Users/josemoya/Documents/GitHub/VentaDeAutos/ProyectoFinal/ProyectoFinal/ProyectoFinal.csproj",
         "projectName": "ProyectoFinal",
-        "projectPath": "C:\\Users\\jorer\\Documents\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj",
-        "packagesPath": "C:\\Users\\jorer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jorer\\Documents\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal\\obj\\",
+        "projectPath": "/Users/josemoya/Documents/GitHub/VentaDeAutos/ProyectoFinal/ProyectoFinal/ProyectoFinal.csproj",
+        "packagesPath": "/Users/josemoya/.nuget/packages/",
+        "outputPath": "/Users/josemoya/Documents/GitHub/VentaDeAutos/ProyectoFinal/ProyectoFinal/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\jorer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/josemoya/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -121,7 +109,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
         }
       }
     }

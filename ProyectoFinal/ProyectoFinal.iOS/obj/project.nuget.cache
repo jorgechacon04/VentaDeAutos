@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "Dnz5+rQ8rNCiQ160kxjbyUxIBaKVlOHZ6X20UkT3IF93Ke6BP0/5m8elU1r+gykF3OS0Wa6x5K04pX871wDE2A==",
+  "dgSpecHash": "hO76Jsc+SVPtR6/8MitQXyRmX0f+hX65i1DEVuHs58ar7VoiIuz1e+kwxjlyiKY5khMTQ07HasPaCaxXn6LyTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jorer\\Documents\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.iOS\\ProyectoFinal.iOS.csproj",
+  "projectFilePath": "/Users/josemoya/Documents/GitHub/VentaDeAutos/ProyectoFinal/ProyectoFinal.iOS/ProyectoFinal.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jorer\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\jorer\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\jorer\\.nuget\\packages\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
-    "C:\\Users\\jorer\\.nuget\\packages\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
+    "/Users/josemoya/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/josemoya/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/josemoya/.nuget/packages/xamarin.essentials/1.3.1/xamarin.essentials.1.3.1.nupkg.sha512",
+    "/Users/josemoya/.nuget/packages/xamarin.forms/4.5.0.495/xamarin.forms.4.5.0.495.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.5.3.2 to 1.3.1. Reference the package directly from the project to select a different version. \r\n ProyectoFinal.iOS -> ProyectoFinal -> Xamarin.Essentials (>= 1.5.3.2) \r\n ProyectoFinal.iOS -> Xamarin.Essentials (>= 1.3.1)",
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.5.3.2 to 1.3.1. Reference the package directly from the project to select a different version. \n ProyectoFinal.iOS -> ProyectoFinal -> Xamarin.Essentials (>= 1.5.3.2) \n ProyectoFinal.iOS -> Xamarin.Essentials (>= 1.3.1)",
       "libraryId": "Xamarin.Essentials",
       "targetGraphs": [
         "Xamarin.iOS,Version=v1.0",
@@ -27,7 +27,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 4.8.0.1269 to 4.5.0.495. Reference the package directly from the project to select a different version. \r\n ProyectoFinal.iOS -> ProyectoFinal -> Xamarin.Forms (>= 4.8.0.1269) \r\n ProyectoFinal.iOS -> Xamarin.Forms (>= 4.5.0.495)",
+      "message": "Detected package downgrade: Xamarin.Forms from 4.8.0.1269 to 4.5.0.495. Reference the package directly from the project to select a different version. \n ProyectoFinal.iOS -> ProyectoFinal -> Xamarin.Forms (>= 4.8.0.1269) \n ProyectoFinal.iOS -> Xamarin.Forms (>= 4.5.0.495)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "Xamarin.iOS,Version=v1.0",

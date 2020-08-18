@@ -13,7 +13,7 @@
 namespace ProyectoFinal {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\EditarUsuario.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/EditarUsuario.xaml")]
     public partial class EditarUsuario : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

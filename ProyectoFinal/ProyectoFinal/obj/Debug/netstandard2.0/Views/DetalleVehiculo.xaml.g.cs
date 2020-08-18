@@ -13,7 +13,7 @@
 namespace ProyectoFinal {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\DetalleVehiculo.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/DetalleVehiculo.xaml")]
     public partial class DetalleVehiculo : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
