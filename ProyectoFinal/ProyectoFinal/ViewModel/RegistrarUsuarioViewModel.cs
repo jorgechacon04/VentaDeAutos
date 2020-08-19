@@ -18,15 +18,17 @@ namespace ProyectoFinal.ViewModel
             OperationCommand = new Command(register);
         }
 
-        public async void register() {
-            user.address = user.state + " ," + user.city; 
+        public async void register()
+        {
+            user.address = user.state + " ," + user.city;
             var response = restService.CreateUser(user).Result.data;
             if (null != response.name)
             {
                 await Application.Current.MainPage.DisplayAlert("Confirmation", "Usuario Creado Satisfactoriamente", "Ir al Login");
                 Application.Current.MainPage = new NavigationPage(new Login());
             }
-            else {
+            else
+            {
                 await Application.Current.MainPage.DisplayAlert("Error", "No se pudo crear el usuario por favor intente de nuevo", "Ok");
             }
         }

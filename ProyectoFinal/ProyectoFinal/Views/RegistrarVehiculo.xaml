@@ -17,12 +17,6 @@
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.Column="1" Text="Registro de Vehiculo" FontSize="20" TextColor="White" BackgroundColor="Transparent"  VerticalOptions="Center" ></Label>
-                <Button Grid.Row="0" Grid.Column="2" Text="Cancelar" TextColor="Red" 
-                        FontSize="12" BackgroundColor="White" 
-                        VerticalOptions="Center" HorizontalOptions="End"
-                        Margin="0,0,5,0"
-                        Clicked="btnCancelar_Clicked"/>
             </Grid>
             <Grid Grid.Row="1" ColumnSpacing="5">
                 <Grid.RowDefinitions>
@@ -91,9 +85,15 @@
                 </StackLayout>
                 
                 <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="10,0,10,0">
-                    <Button x:Name="btnAceptar" Text="Aceptar registro" 
+                    <Button x:Name="btnAceptar" Text="Vender Vehiculo" 
                             BackgroundColor="#41B3A3" TextColor="White"
                             Command="{Binding OperationCommand}"/>
+                    
+                    <Button Grid.Row="0" Grid.Column="2" Text="Cancelar" TextColor="White" 
+                        FontSize="12" BackgroundColor="Red" 
+                        VerticalOptions="Center" HorizontalOptions="Center"
+                        Margin="0,0,5,0"
+                        Clicked="btnCancelar_Clicked"/>
                 </StackLayout>
 
             </Grid>

@@ -19,5 +19,10 @@ namespace ProyectoFinal
             InitializeComponent();
             this.BindingContext = new BuscarVehiculoViewModel();
         }
+
+        private void btnRegresar_Clicked(object sender, System.EventArgs e)
+        {
+            Application.Current.MainPage = new NavigationPage(new Menu());
+        }
     }
 }

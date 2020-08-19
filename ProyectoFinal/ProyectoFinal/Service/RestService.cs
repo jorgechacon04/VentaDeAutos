@@ -13,6 +13,7 @@ namespace ProyectoFinal
 {
     public class RestService
     {
+        //Direccion donde esta el servicio escrito en python hosteado
         private const string baseUrl = "http://173.230.132.251";
 
         private HttpClient httpClient;
@@ -51,6 +52,15 @@ namespace ProyectoFinal
             return JsonConvert.DeserializeObject<UserDto>(response);
         }
 
+        public async Task<UserDto> UpdateUser(User user)
+        {
+
+            var content = new StringContent(JsonConvert.SerializeObject(user), Encoding.UTF8, "application/json");
+
+            string response = await httpClient.PutAsync(baseUrl + "/user", content).Result.Content.ReadAsStringAsync();
+
+            return JsonConvert.DeserializeObject<UserDto>(response);
+        }
 
         public async Task<CarDto> RegisterCar(Car car)
         {

@@ -17,8 +17,6 @@
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.Column="1" Text="Editar Perfil" FontSize="20" TextColor="White" BackgroundColor="Transparent"  VerticalOptions="Center" ></Label>
-                <Button Grid.Row="0" Grid.Column="2" Text="Cancelar" TextColor="Red" FontSize="12" BackgroundColor="White"  VerticalOptions="Center" HorizontalOptions="End" Margin="0,0,5,0"></Button>
             </Grid>
             <Grid Grid.Row="1" ColumnSpacing="5">
                 <Grid.RowDefinitions>
@@ -38,65 +36,83 @@
                 </Grid.ColumnDefinitions>
                 <Label Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="Gray" TextColor="White" Text="Detalles del perfil" FontSize="20" Margin="10,10,10,10" HorizontalOptions="FillAndExpand" 
                        HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-                <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Margin="10,0,10,0">
+
+                <StackLayout Grid.Row="1" Grid.Column="0" Margin="10,0,0,0">
                     <Label Text="Nombre"></Label>
-                    <Entry x:Name="txtNombre" FontSize="16" IsReadOnly="True"></Entry>
+                    <Entry x:Name="txtNombre" FontSize="16" 
+                           Text="{Binding user.name}"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="1" Grid.Column="1" Margin="0,0,10,0">
+                    <Label Text="Email"></Label>
+                    <Entry x:Name="txtEmail" FontSize="16"
+                           Text="{Binding user.email}"/>
                 </StackLayout>
 
                 <StackLayout Grid.Row="2" Grid.Column="0" Margin="10,0,0,0">
                     <Label Text="Primer Apellido"></Label>
-                    <Entry x:Name="txtApellido1" FontSize="16" IsReadOnly="True"></Entry>
+                    <Entry x:Name="txtApellido1" FontSize="16" Text="{Binding user.firstLastName}"/>
                 </StackLayout>
                 <StackLayout Grid.Row="2" Grid.Column="1" Margin="0,0,10,0">
                     <Label Text="Segundo Apellido"></Label>
-                    <Entry x:Name="txtApellido2" FontSize="16" IsReadOnly="True"></Entry>
+                    <Entry x:Name="txtApellido2" FontSize="16"
+                           Text="{Binding user.secondLastName}"/>
                 </StackLayout>
 
                 <StackLayout Grid.Row="3" Grid.Column="0" Margin="10,0,0,0">
                     <Label Text="Cedula"></Label>
-                    <Entry x:Name="txtCedula" FontSize="16" IsReadOnly="True"></Entry>
+                    <Entry x:Name="txtCedula" FontSize="16"
+                       Text="{Binding user.identification}"/>
                 </StackLayout>
                 <StackLayout Grid.Row="3" Grid.Column="1" Margin="0,0,10,0">
                     <Label Text="Tel/Cel"></Label>
-                    <Entry x:Name="txtTelefono" FontSize="16"></Entry>
+                    <Entry x:Name="txtTelefono" FontSize="16"
+                     Keyboard="Numeric"
+                     Text="{Binding user.phone}"  />
                 </StackLayout>
 
                 <StackLayout Grid.Row="4" Grid.Column="0" Margin="10,0,0,0">
-                    <Label Text="Provincia"></Label>
-                    <Picker x:Name="Gender"  Title="Seleccione una provincia" FontSize="14">
-                        <Picker.Items>
-                            <x:String>San Jose</x:String>
-                            <x:String>Heredia</x:String>
-                            <x:String>Cartago</x:String>
-                            <x:String>Guanacaste</x:String>
-                            <x:String>Limon</x:String>
-                            <x:String>Puntarenas</x:String>
-                            <x:String>Alajuela</x:String>
-                        </Picker.Items>
-                    </Picker>
+                    <StackLayout Grid.Row="4" Grid.Column="1" Margin="0,0,10,0">
+                        <Label Text="Provincia"></Label>
+                        <Entry x:Name="txtProvincia" FontSize="16"
+                            Text="{Binding user.state}"/>
+                    </StackLayout>
                 </StackLayout>
                 <StackLayout Grid.Row="4" Grid.Column="1" Margin="0,0,10,0">
                     <Label Text="Canton"></Label>
-                    <Entry x:Name="txtCanton" FontSize="16"></Entry>
+                    <Entry x:Name="txtCanton" FontSize="16"
+                            Text="{Binding user.city}"/>
                 </StackLayout>
 
-                <StackLayout Grid.Row="5" Grid.Column="0" Margin="10,0,0,0">
+                <StackLayout Grid.Row="5" Grid.ColumnSpan="2" Margin="10,0,0,0">
                     <Label Text="Distrito"></Label>
-                    <Entry x:Name="txtDistrito" FontSize="16"></Entry>
+                    <Entry x:Name="txtDistrito" FontSize="16"
+                            Text="{Binding user.neighborhood}"/>
+
                 </StackLayout>
 
                 <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="10,0,10,0">
                     <Label Text="Contraseña"></Label>
-                    <Entry x:Name="txtContrasenna" FontSize="16"></Entry>
+                    <Entry x:Name="txtContrasenna" FontSize="16"
+                                Text="{Binding user.password}"/>
                 </StackLayout>
 
                 <StackLayout Grid.Row="7" Grid.ColumnSpan="2" Margin="10,0,10,0">
                     <Label Text="Confirmar contraseña"></Label>
-                    <Entry x:Name="txtConfirmarContrasenna" FontSize="16"></Entry>
+                    <Entry x:Name="txtConfirmarContrasenna" FontSize="16"/>
                 </StackLayout>
 
                 <StackLayout Grid.Row="8" Grid.ColumnSpan="2" Margin="10,0,10,0">
-                    <Button x:Name="btnAceptar" Text="Confirmar Cambios" BackgroundColor="#41B3A3" TextColor="White"></Button>
+                    <Button x:Name="btnAceptar" Text="Actualizar Cuenta" BackgroundColor="#41B3A3" 
+                            TextColor="White"
+                            Command="{Binding OperationCommand}"/>
+
+                    <Button Grid.Row="0" Grid.Column="2" 
+                        Text="Cancelar" TextColor="White" 
+                        FontSize="12" BackgroundColor="Red"  
+                        VerticalOptions="Center" HorizontalOptions="Center" 
+                        Margin="0,0,5,0"
+                        Clicked="btnRegresar_Clicked"/>
                 </StackLayout>
 
             </Grid>
